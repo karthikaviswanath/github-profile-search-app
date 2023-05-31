@@ -1,5 +1,13 @@
+import ProfileResults from "./ProfileResults";
+import ProfileSearch from "./ProfileSearch";
+
 function Home() {
-  return <h1>Home page !!!</h1>;
+  return (
+    <>
+      <ProfileSearch />
+      <ProfileResults />
+    </>
+  );
 }
 
 export default Home;
