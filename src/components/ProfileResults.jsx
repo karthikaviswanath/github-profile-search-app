@@ -24,7 +24,7 @@ function ProfileResults() {
         <br />
         <br />
         <div className="grid grid-cols-4 gap-4">
-          {profiles.map((p) => (
+          {profiles != null && profiles.map((p) => (
             <ProfileItem key={p.id} profile={p} />
           ))}
         </div>

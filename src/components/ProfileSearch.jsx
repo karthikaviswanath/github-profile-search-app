@@ -49,7 +49,7 @@ function ProfileSearch() {
                   />
                 </svg>
               </button>
-              {profiles.length > 0 && (
+              {profiles != null && profiles.length > 0 && (
                 <div>
                   <button
                     onClick={clearProfiles}

@@ -6,6 +6,10 @@ const SearchReducer = (currentState, action) => {
       return { ...currentState, loading: true };
     case "CLEAR_PROFILES":
       return { ...currentState, profiles: [] };
+    case "GET_PROFILE":
+      return { ...currentState, profile: action.payload, loading: false };
+    case "GET_REPOS":
+      return { ...currentState, repos: action.payload, loading: false };
     default:
       return currentState;
   }
