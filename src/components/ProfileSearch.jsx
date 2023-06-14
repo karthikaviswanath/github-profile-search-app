@@ -32,6 +32,7 @@ function ProfileSearch() {
                 className="input input-bordered input-primary w-full max-w-xs"
                 value={text}
                 onChange={handleChange}
+                required
               />
               <button type="submit" className="btn btn-ghost btn-circle">
                 <svg
